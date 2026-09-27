@@ -12,7 +12,7 @@ import os
 import re
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-PORT = 9556
+PORT = int(os.environ.get("PORT", 9556))
 NETEASE_HEADERS = {
     'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15',
     'Referer': 'https://music.163.com'

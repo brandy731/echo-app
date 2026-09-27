@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: echo
+    env: python
+    region: singapore
+    plan: free
+    buildCommand: ""
+    startCommand: python server.py
+    envVars:
+      - key: PORT
+        value: "10000"
